@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from ast import List
-from model import FormulaOne
+from typing import List
+from model.formula_one import FormulaOne
 
 #abstract repository for the formula one entity. It has the methods to create, update, delete and get all the formula ones
 class FormulaOneRepository(ABC):

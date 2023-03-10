@@ -3,7 +3,7 @@ from mongoengine import *
 #Class that inherits from mongoengine and it is called formula one, it has a method to open the drs and another one for closing it, also for accelerating and braking
 class FormulaOne(Document):
 
-    car_number = IntField(required=True)    
+    car_number = IntField(required=True, primary_key=True)    
     driver_name = StringField(required=True)
 
     #open drs

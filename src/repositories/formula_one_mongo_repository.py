@@ -1,5 +1,5 @@
 #mongo implementation of the formula one repository
-from ast import List
+from typing import List
 from model.formula_one import FormulaOne
 from repositories.formula_one_repository import FormulaOneRepository
 
