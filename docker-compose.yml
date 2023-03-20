@@ -1,0 +1,10 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - type: bind
+        source: ./mongo-data # this is the folder on your host machine
+        target: /data/db # this is the folder inside the container
+    ports:
+      - "27017:27017"
