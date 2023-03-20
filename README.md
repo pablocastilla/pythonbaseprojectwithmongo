@@ -1,4 +1,4 @@
-https://github.com/pablocastilla/pythonbaseprojectwithmongo/actions/workflows/python-app.yml/badge.svg
+![Tests](https://github.com/pablocastilla/pythonbaseprojectwithmongo/actions/workflows/python-app.yml/badge.svg)
 
 # Goal
 python skeleton with repositories, dependency injection, tests and a model in a mongo db. Also github actions, linting, precommithooks
