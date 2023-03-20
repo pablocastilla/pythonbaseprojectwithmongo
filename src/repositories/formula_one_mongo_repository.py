@@ -1,10 +1,10 @@
-#mongo implementation of the formula one repository
+# mongo implementation of the formula one repository
 from typing import List
 from model.formula_one import FormulaOne
 from repositories.formula_one_repository import FormulaOneRepository
 
 
-class FormulaOneMongoRepository(FormulaOneRepository): 
+class FormulaOneMongoRepository(FormulaOneRepository):
     def create(self, formula_one: FormulaOne) -> FormulaOne:
         formula_one.save()
         return formula_one
@@ -18,4 +18,4 @@ class FormulaOneMongoRepository(FormulaOneRepository):
         return formula_one
 
     def get_all(self) -> List[FormulaOne]:
-        return FormulaOne.objects.all() # type: ignore
+        return FormulaOne.objects.all()  # type: ignore
