@@ -3,7 +3,7 @@ import mongoengine
 from model.formula_one import FormulaOne
 from repositories.formula_one_mongo_repository import FormulaOneMongoRepository
 from race_simulator import RaceSimulator
-from mongoengine import *
+import mongoengine 
 
 #create main method
 if __name__ == '__main__':

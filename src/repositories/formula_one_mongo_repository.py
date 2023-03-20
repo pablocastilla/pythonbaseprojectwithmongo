@@ -18,4 +18,4 @@ class FormulaOneMongoRepository(FormulaOneRepository):
         return formula_one
 
     def get_all(self) -> List[FormulaOne]:
-        return FormulaOne.objects.all()
+        return FormulaOne.objects.all() # type: ignore
