@@ -8,7 +8,7 @@ class RaceSimulator:
         self.formula_one_repository = formula_one_repository
 
     # simulate method that executes the simulation
-    def simulate(self):
+    def simulate(self) -> None:
         cars = self.formula_one_repository.get_all()
         for car in cars:
             print("Car number: " + str(car.car_number))
