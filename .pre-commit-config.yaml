@@ -1,4 +1,10 @@
 repos:
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.1.1
+    hooks:
+      - id: mypy
+        language_version: python3.11
+        args: [--follow-imports=silent, --ignore-missing-imports, --show-column-number, --strict, --explicit-package-bases ]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
